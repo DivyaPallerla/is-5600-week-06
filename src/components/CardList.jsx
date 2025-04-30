@@ -53,7 +53,7 @@ const CardList = ({data}) => {
     setOffset(0);
   };
   
-  // Update products when offset or filteredData changes
+  // Updating products when offset or filteredData changes
   useEffect(() => {
     setProducts(filteredData.slice(offset, offset + limit));
   }, [offset, filteredData, limit]);
